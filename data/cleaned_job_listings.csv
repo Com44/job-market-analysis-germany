@@ -1,0 +1,7 @@
+job_title,company,location,employment_type,skills,salary
+Working Student Data Analyst,Siemens,Berlin,Working Student,"['python', 'sql', 'excel']",0.0
+Data Analyst,BMW,Munich,Full-time,"['python', 'sql', 'tableau']",65000.0
+Working Student IT Support,Deutsche Bank,Frankfurt,Working Student,"['excel', 'power bi']",0.0
+Data Scientist,Delivery Hero,Berlin,Full-time,"['python', 'sql', 'machine learning']",72000.0
+Working Student Software Engineer,SAP,Berlin,Working Student,"['python', 'git', 'sql']",0.0
+Business Analyst,Allianz,Munich,Full-time,"['sql', 'excel', 'power bi']",60000.0
