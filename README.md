@@ -1,4 +1,4 @@
->> Job Market Data Analysis (Germany)
+ Job Market Data Analysis (Germany)
 
 This project analyzes German job market data using Python to identify in-demand technical skills, with a focus on working student and entry-level roles.
 
