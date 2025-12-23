@@ -5,7 +5,7 @@ This project analyzes German job market data using Python to identify in-demand 
 Skills Demonstrated
 - Data cleaning with pandas and NumPy
 - Exploratory data analysis (EDA)
-- Python vs SQL demand analysis
+- Analysis of job trends, employment types, and skill demand
 - Working student vs full-time role comparison
 - Data visualization using matplotlib
 
