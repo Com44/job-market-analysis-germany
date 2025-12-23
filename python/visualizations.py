@@ -8,7 +8,7 @@ import os
 os.makedirs("charts", exist_ok=True)
 
 # Load cleaned data
-df = pd.read_csv("data/cleaned_job_listings.csv")
+df = pd.read_csv(r"C:\Users\u23092\Desktop\job-market-analysis-germany\data\cleaned_job_listings.csv")
 
 # Convert string representation of lists to actual lists
 def parse_skills(s):
@@ -63,3 +63,48 @@ plt.ylabel("")  # remove y-label
 plt.tight_layout()
 plt.savefig("charts/skill_distribution.png")
 plt.show()
+
+# -----------------------------
+# Top Job Positions
+# -----------------------------
+job_counts = df['job_title'].value_counts()
+plt.figure(figsize=(8,5))
+job_counts.plot(kind='bar', color='skyblue')
+plt.title("Top Job Titles")
+plt.xlabel("Job Title")
+plt.ylabel("Count")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.savefig("charts/top_job_titles.png")
+plt.clf()
+
+# -----------------------------
+# Jobs by Location
+# -----------------------------
+location_counts = df['location'].value_counts()
+plt.figure(figsize=(6,4))
+location_counts.plot(kind='bar', color='green')
+plt.title("Job Openings by Location")
+plt.xlabel("City")
+plt.ylabel("Count")
+plt.xticks(rotation=0)
+plt.tight_layout()
+plt.savefig("charts/jobs_by_location.png")
+plt.clf()
+# -----------------------------
+# Average Salary Per Job Title
+# -----------------------------
+
+salary_df = df[df['salary'] > 0]
+if not salary_df.empty:
+    avg_salary = salary_df.groupby('job_title')['salary'].mean().sort_values(ascending=False)
+    plt.figure(figsize=(8,5))
+    avg_salary.plot(kind='bar', color='purple')
+    plt.title("Average Salary by Job Title")
+    plt.ylabel("Salary (EUR)")
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig("charts/average_salary.png")
+    plt.clf()
+
+print("All charts created successfully in the 'charts' folder!")

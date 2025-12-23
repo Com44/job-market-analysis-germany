@@ -29,3 +29,6 @@ Charts
 
 **Most Demanding Skills**  
 ![Skill Demand](charts/skill_demand.png)
+
+**Average Salary Per Job Title**
+![Average Salary](charts/average_salary.png)
