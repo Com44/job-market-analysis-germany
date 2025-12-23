@@ -19,7 +19,12 @@ Project Structure
 - `python/` – data cleaning, analysis, and visualization scripts
 - `charts/` – generated skill demand chart
 
-How to Run
- Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+Charts
+**Top 3 Most In-Demand Skills**  
+![Top 3 Skills](charts/top_3_skills.png)
+
+**(Top 5 + Other)**  
+![Skills Distribution](charts/skill_distribution.png)
+
+**Demanding Skills**  
+![Skill Demand](charts/skill_demand.png)
