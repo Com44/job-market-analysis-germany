@@ -20,11 +20,12 @@ Project Structure
 - `charts/` – generated skill demand chart
 
 Charts
+
 **Top 3 Most In-Demand Skills**  
 ![Top 3 Skills](charts/top_3_skills.png)
 
 **(Top 5 + Other)**  
 ![Skills Distribution](charts/skill_distribution.png)
 
-**Demanding Skills**  
+**Most Demanding Skills**  
 ![Skill Demand](charts/skill_demand.png)
